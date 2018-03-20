@@ -11,3 +11,8 @@ This repository contains the group projects undertaken during the course "Text E
 2. [Jupyter Notebook](text_classification/textClassification_Notebook.html)
 3. [Report](text_classification/textClassification_Report.pdf)
 
+### 3rd Assignment - sequence labeling
+1. [Assignment Description](sequence_labeling/Proj3_Sequence_Labeling.pdf) 
+2. [Jupyter Notebook](sequence_labeling/sequenceLabeling_Notebook.html)
+3. [Report](sequence_labeling/sequenceLabeling_Report.pdf)
+
