@@ -12125,7 +12125,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hidden-Markov-Model-(HMM)">Hidden Markov Model (HMM)<a class="anchor-link" href="#Hidden-Markov-Model-(HMM)">&#182;</a></h2>
+<h2 id="Hidden-Markov-Model-(HMM)">Hidden Markov Model (HMM)<a class="anchor-link" href="#Hidden-Markov-Model-(HMM)">&#182;</a></h2><p>The Hidden Markov Model (HMM) is a powerful statistical tool for modeling generative sequences that can be characterized by an underlying process generating an observable sequence. HMMs have found application in many areas interested in signal processing, and in particular speech processing, but have also been applied with success to low level NLP tasks such as part-of-speech tagging, phrase chunking, and extracting target information from documents.</p>
+
 </div>
 </div>
 </div>
@@ -12729,7 +12730,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conditional-random-fields-(CRFs)">Conditional random fields (CRFs)<a class="anchor-link" href="#Conditional-random-fields-(CRFs)">&#182;</a></h2>
+<h2 id="Conditional-random-fields-(CRFs)">Conditional random fields (CRFs)<a class="anchor-link" href="#Conditional-random-fields-(CRFs)">&#182;</a></h2><p>Conditional random fields (CRFs) are a probabilistic framework for labeling and segmenting structured data, such as sequences, trees and lattices. The underlying idea is that of defining a conditional probability distribution over label sequences given a particular observation sequence, rather than a joint distribution over both label and observation sequences.</p>
+
 </div>
 </div>
 </div>
@@ -14092,23 +14094,31 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><p>While comparing the baseline approach with HMM and CRFs we observe that HMM does not perform better. On the contrary, CRFs perform significantly well because as mentioned above that approach takes into account previous tokens and uses features instead of just tokens.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># hmm metrics</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HMM accuracy:&quot;</span><span class="p">,</span> <span class="n">results_hmm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_acc&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HMM F1-score:&quot;</span><span class="p">,</span> <span class="n">results_hmm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_f1&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="c1"># crf metrics</span>
 
+<span class="c1"># crf metrics</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CRF accuracy:&quot;</span><span class="p">,</span> <span class="n">results_crf</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_acc&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CRF F1-score:&quot;</span><span class="p">,</span> <span class="n">results_crf</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_f1&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="c1"># baseline metrics</span>
 
+<span class="c1"># baseline metrics</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Baseline accuracy:&quot;</span><span class="p">,</span> <span class="n">results_baseline</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_acc&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Baseline F1-score:&quot;</span><span class="p">,</span> <span class="n">results_baseline</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;on_test_f1&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
