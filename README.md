@@ -16,3 +16,8 @@ This repository contains the group projects undertaken during the course "Text E
 2. [Jupyter Notebook](sequence_labeling/sequenceLabeling_Notebook.html)
 3. [Report](sequence_labeling/sequenceLabeling_Report.pdf)
 
+### 4th Assignment - neural networks
+1. [Assignment Description](neural_nets/Proj4_Neural_Nets.pdf) 
+2. [Jupyter Notebook](neural_nets/neuralNets_Notebook.html)
+3. [Report](neural_nets/neuralNets_Report.pdf)
+
